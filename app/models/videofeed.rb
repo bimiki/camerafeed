@@ -1,0 +1,2 @@
+class Videofeed < ApplicationRecord
+end
