@@ -4,6 +4,7 @@ class VideofeedsController < ApplicationController
   # GET /videofeeds or /videofeeds.json
   def index
     @videofeeds = Videofeed.all
+
   end
 
   # GET /videofeeds/1 or /videofeeds/1.json
