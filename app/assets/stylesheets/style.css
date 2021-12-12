@@ -1,0 +1,16 @@
+body {
+	background-color: #333;
+}
+.wrap {
+    position: relative;
+	z-index: 8888;
+	height: 100%;
+	width: 100%;
+  text-align: center;
+}
+.box {
+	width: 720px;
+  display: inline-block;
+  margin-right:15px;
+  text-align: left;
+}
