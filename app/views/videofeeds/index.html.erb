@@ -1,11 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Video Stuff</h1>
-
-<div id="videofeeds">
-  <%= render @videofeeds %>
-</div>
-
 <br>
 
 <table>
@@ -67,6 +62,9 @@ snap.addEventListener("click",function(){
 
 </script>
 
+<div id="videofeeds">
+  <%= render @videofeeds %>
+</div>
 
 
 <%= link_to "New videofeed", new_videofeed_path %>
