@@ -1,9 +1,12 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Video Stuff</h1>
+<h1>ADD HERE</h1>
+<div class="wrap" id="videofeeds">
+  <%= render @videofeeds %>
+</div>
+<%= link_to "New videofeed", new_videofeed_path %>
 <br>
 
-<table>
 
 <div class="card-body">
   <video id="video" playinline autoplay></video>
@@ -14,10 +17,6 @@
 </div>
 
 <canvas id="canvas" width="1280" height="720"></canvas>
-
-</table>
-
-
 
 
 <script>
@@ -30,7 +29,8 @@ const snap = document.getElementById('snap');
 const errorMsgElement = document.getElementById('span#ErrorMsg');
 
 const constraints = {
-   audio: false, // off for now till i learn how to stop the feedbackloop
+
+   audio: false,
    video:{
      width: 1280, height: 720
     }
@@ -58,13 +58,6 @@ var context = canvas.getContext('2d');
 snap.addEventListener("click",function(){
     context.drawImage(video, 0, 0, 1280, 720,);
 })
-
-
 </script>
 
-<div id="videofeeds">
-  <%= render @videofeeds %>
-</div>
-
-
-<%= link_to "New videofeed", new_videofeed_path %>
+<%= render @music %>
