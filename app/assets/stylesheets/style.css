@@ -1,5 +1,8 @@
 body {
-	background-color: #333;
+  background-image: url("https://i.giphy.com/media/MFabj1E9mgUsqwVWHu/giphy.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cccccc;
 }
 .wrap {
     position: relative;
