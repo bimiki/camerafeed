@@ -5,10 +5,7 @@ body {
   background-color: #cccccc;
 }
 .wrap {
-    position: relative;
-	z-index: 8888;
-	height: 100%;
-	width: 100%;
+  position: relative;
   text-align: center;
 }
 .box {
@@ -17,3 +14,9 @@ body {
   margin-right:15px;
   text-align: left;
 }
+ .videostream {
+   border-style: outset;
+ }
+ .chill {
+   float: left;
+ }

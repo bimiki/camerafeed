@@ -6,9 +6,12 @@
 </div>
 <%= link_to "New videofeed", new_videofeed_path %>
 <br>
+<h2 class="chill">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5qap5aO4i9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</h2>
 
 
-<div class="card-body">
+<div class="videostream">
   <video id="video" playinline autoplay></video>
 </div>
 
@@ -59,8 +62,3 @@ snap.addEventListener("click",function(){
     context.drawImage(video, 0, 0, 1280, 720,);
 })
 </script>
-
-<!-- make this into the /music partial later -->
-<h2 class="wrap">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5qap5aO4i9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</h2>
