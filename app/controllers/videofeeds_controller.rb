@@ -26,7 +26,7 @@ class VideofeedsController < ApplicationController
 
     respond_to do |format|
       if @videofeed.save
-        format.html { redirect_to @videofeed, notice: "Videofeed was successfully created." }
+        format.html { redirect_to @videofeed, notice: "successfully created." }
         format.json { render :show, status: :created, location: @videofeed }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -39,7 +39,7 @@ class VideofeedsController < ApplicationController
   def update
     respond_to do |format|
       if @videofeed.update(videofeed_params)
-        format.html { redirect_to @videofeed, notice: "Videofeed was successfully updated." }
+        format.html { redirect_to @videofeed, notice: "Update Success." }
         format.json { render :show, status: :ok, location: @videofeed }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class VideofeedsController < ApplicationController
   def destroy
     @videofeed.destroy
     respond_to do |format|
-      format.html { redirect_to videofeeds_url, notice: "Videofeed was successfully destroyed." }
+      format.html { redirect_to videofeeds_url, notice: "successfully destroyed." }
       format.json { head :no_content }
     end
   end
